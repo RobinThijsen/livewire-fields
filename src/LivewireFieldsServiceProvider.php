@@ -28,6 +28,6 @@ class LivewireFieldsServiceProvider extends PackageServiceProvider
 
     private function registerLivewireComponent(): void
     {
-        Livewire::component('dropzone', Input::class);
+        Livewire::component('input', Input::class);
     }
 }

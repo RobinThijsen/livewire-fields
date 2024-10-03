@@ -1,0 +1,29 @@
+{
+  "name": "livewire-fields-style",
+  "version": "1.0.0",
+    "style": "dist/styles.css",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/RobinThijsen/livewire-fields.git"
+    },
+    "keywords": [
+        "livewire",
+        "fields"
+    ],
+    "devDependencies": {
+        "tailwindcss": "^3.3.6"
+    },
+    "scripts": {
+        "dev": "npx tailwindcss -i ./src/styles.scss -o ./dist/styles.css --watch",
+        "build": "npx tailwindcss -o ./dist/styles.css --minify"
+    },
+    "author": "Robin Thijsen",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/RobinThijsen/livewire-fields/issues"
+    },
+    "homepage": "https://github.com/RobinThijsen/livewire-fields",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
+    }
+}
