@@ -16,9 +16,13 @@ class LivewireFields extends Component
 
     #[Modelable]
     public mixed $value;
+
     public string|bool $label = false;
+
     public string|bool $placeholder = false;
+
     public bool $required = false;
+
     public bool $disabled = false;
 
     public function mount()
