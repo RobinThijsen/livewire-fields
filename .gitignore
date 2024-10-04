@@ -30,3 +30,6 @@ phpstan.neon
 testbench.yaml
 /docs
 /coverage
+
+Makefile
+resources/js/livewire-fields-style/node_modules

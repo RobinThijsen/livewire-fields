@@ -4,9 +4,9 @@ namespace RobinThijsen\LivewireFields\Http\Livewire;
 
 use RobinThijsen\LivewireFields\LivewireFields;
 
-class Input extends LivewireFields
+class ProfilePicture extends LivewireFields
 {
-    public string|bool $prepend = false;
+    public string|bool $button = false;
 
     public function mount()
     {
@@ -15,6 +15,6 @@ class Input extends LivewireFields
 
     public function render()
     {
-        return view('livewire-fields::livewire.input');
+        return view('livewire-fields::livewire.profile-picture');
     }
 }

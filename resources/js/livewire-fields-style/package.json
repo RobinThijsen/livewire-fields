@@ -1,6 +1,6 @@
 {
-  "name": "livewire-fields-style",
-  "version": "1.0.0",
+  "name": "@robinthijsen/livewire-fields-style",
+  "version": "1.0.1",
     "style": "dist/styles.css",
     "repository": {
         "type": "git",

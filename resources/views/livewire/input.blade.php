@@ -15,7 +15,6 @@
             <input type="text"
                    name="{{ $id }}"
                    id="{{ $id }}"
-                   @if($autocomplete)autocomplete="{{ $id }}" @endif
                    @if($placeholder)placeholder="{{ $placeholder }}" @endif
                    @if($required)required @endif
                    @if($disabled)disabled @endif

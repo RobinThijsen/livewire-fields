@@ -4,9 +4,11 @@ namespace RobinThijsen\LivewireFields\Http\Livewire;
 
 use RobinThijsen\LivewireFields\LivewireFields;
 
-class Input extends LivewireFields
+class Textarea extends LivewireFields
 {
-    public string|bool $prepend = false;
+    public string|bool $infos = false;
+
+    public mixed $content = false;
 
     public function mount()
     {
@@ -15,6 +17,6 @@ class Input extends LivewireFields
 
     public function render()
     {
-        return view('livewire-fields::livewire.input');
+        return view('livewire-fields::livewire.textarea');
     }
 }

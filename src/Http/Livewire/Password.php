@@ -4,9 +4,9 @@ namespace RobinThijsen\LivewireFields\Http\Livewire;
 
 use RobinThijsen\LivewireFields\LivewireFields;
 
-class Input extends LivewireFields
+class Password extends LivewireFields
 {
-    public string|bool $prepend = false;
+    public bool $withShowContent = false;
 
     public function mount()
     {
