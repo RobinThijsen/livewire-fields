@@ -10,19 +10,19 @@
             @if($required)required @endif
             @if($disabled)disabled @endif
             wire:model="value">
-        @foreach($items as $item)
-            <option value="{{ is_array($item) ? $item['id'] : $item->id }}">
+        @foreach($options as $option)
+            <option value="{{ is_array($option) ? $option['id'] : $option->id }}">
                 @if ($optionLabel)
-                    @if (is_array($item))
-                        {{ __("$optionLabel.{$item['id']}") }}
+                    @if (is_array($option))
+                        {{ __("$optionLabel.{$option['id']}") }}
                     @else
-                        {{ __("$optionLabel.{$item->id}") }}
+                        {{ __("$optionLabel.{$option->id}") }}
                     @endif
                 @elseif ($optionProp)
-                    @if (is_array($item))
-                        {{ $item['id'] }}
+                    @if (is_array($option))
+                        {{ $option['id'] }}
                     @else
-                        {{ $item->{$optionProp} }}
+                        {{ $option->{$optionProp} }}
                     @endif
                 @endif
             </option>
