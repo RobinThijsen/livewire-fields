@@ -1,14 +1,13 @@
-<div class="flex items-center gap-x-3">
+<div class="form-input form-input--radio">
     <input type="radio"
            id="{{ $id }}"
            name="{{ $id }}"
            @if($required)required @endif
            @if($disabled)disabled @endif
-           wire:model="value"
-           class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+           wire:model="value" />
     @if ($label)
-        <label for="{{ $id }}" class="block text-sm font-medium leading-6 text-gray-900">
-            {{ $label }}
+        <label for="{{ $id }}">
+            {{ $label }} @if($required) <sup>*</sup> @endif
         </label>
     @endif
 </div>

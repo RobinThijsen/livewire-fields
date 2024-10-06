@@ -13,6 +13,6 @@ class Checkbox extends LivewireFields
 
     public function render()
     {
-        return view('livewire-fields::livewire.textarea');
+        return view('livewire-fields::livewire.checkbox');
     }
 }

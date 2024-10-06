@@ -15,6 +15,6 @@ class Password extends LivewireFields
 
     public function render()
     {
-        return view('livewire-fields::livewire.input');
+        return view('livewire-fields::livewire.password');
     }
 }

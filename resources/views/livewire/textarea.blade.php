@@ -1,23 +1,21 @@
-<div class="col-span-full">
+<div class="form-input form-input--textarea">
     @if ($label)
-        <label for="{{ $id }}" class="block text-sm font-medium leading-6 text-gray-900">
-            {{ $label }}
+        <label for="{{ $id }}">
+            {{ $label }} @if($required) <sup>*</sup> @endif
         </label>
     @endif
-    <div class="mt-2">
-        <textarea
-            id="{{ $id }}"
-            name="{{ $id }}"
-            @if($placeholder)placeholder="{{ $placeholder }}" @endif
-            @if($required)required @endif
-            @if($disabled)disabled @endif
-            wire:model="value"
-            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-            {{ $content }}
-        </textarea>
-    </div>
+    <textarea id="{{ $id }}"
+              name="{{ $id }}"
+              @if($placeholder)placeholder="{{ $placeholder }}" @endif
+              @if($required)required @endif
+              @if($disabled)disabled @endif
+              wire:model="value">
+        {{ $content }}
+    </textarea>
 
     @if ($infos)
-        <p class="mt-3 text-sm leading-6 text-gray-600">{{ $infos }}</p>
+        <p>
+            {{ $infos }}
+        </p>
     @endif
 </div>
